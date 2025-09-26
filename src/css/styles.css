@@ -1,0 +1,178 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #000;
+}
+
+@font-face {
+  font-family: "Scary1";
+  src: url(/src/coldnightforalligators.otf);
+}
+@font-face {
+  font-family: "Scary2";
+  src: url(/src/youmurdererbb.otf);
+}
+p, h1, h2, h3, h4, h5 {
+  font-family: "Scary2";
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.main-title {
+  font-family: "Scary1";
+  outline: 1px dashed blue;
+  padding: 2rem;
+}
+.main-title > h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 8rem;
+}
+
+.scary-text {
+  color: #f00;
+}
+
+.green-text {
+  color: #0F0;
+}
+
+.mega-text {
+  color: #f00;
+  font-size: 15rem;
+  margin-left: 3rem;
+}
+
+.now-we-do {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 6rem;
+  width: 1300px;
+  outline: 1px solid darksalmon;
+}
+.now-we-do > h1, .now-we-do__title {
+  font-size: 6rem;
+  display: inline-block;
+  font-family: "Scary2";
+  margin-bottom: 2rem;
+}
+.now-we-do__tumbnail {
+  animation: sway 10s ease-in-out infinite;
+  width: 80%;
+  border: 1px solid rgb(49, 202, 202);
+  box-shadow: 0 0 30px rgb(49, 202, 202);
+  border-radius: 2rem;
+}
+.now-we-do__schedule {
+  outline: 1px dashed red;
+}
+.now-we-do__schedule-title {
+  font-family: "Scary2";
+  font-size: 3rem;
+}
+.now-we-do__schedule-subtitle {
+  font-size: 2.5rem;
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-4px) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateX(4px) rotate(1.5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.sidebar {
+  margin: 3rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  outline: 1px solid red;
+  padding: 1rem 0;
+}
+.sidebar--participants {
+  margin-top: 10rem;
+  padding: 2rem;
+}
+.sidebar__link {
+  transition: 0.13s;
+  padding: 0.3rem 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+.sidebar__link:hover {
+  transform: translateX(10%);
+  font-weight: 900;
+}
+.sidebar__link::before {
+  content: "► ";
+}/*# sourceMappingURL=styles.css.map */
