@@ -15,8 +15,12 @@
 
 <body>
     <main>
+
+        <audio id="hoverSound" src="/src/hover.ogg" preload="auto"></audio>
+        <audio id="hoverSound2" src="/src/hover2.ogg" preload="auto"></audio>
+
         <nav class="sidebar">
-            <a href="/schedule.html" class="sidebar__link">ознакомиться с расписанием</a>
+            <a href="/index.html" class="sidebar__link">вернуться на главную</a>
             <button id="participants-menu-button" href="/participants.html" class="sidebar__link">ознакомиться с
                 участниками</button>
         </nav>
@@ -28,12 +32,12 @@
                     <p>Гева</p>
                 </li>
                 <li>
-                    <img src="/src/graphics/png/avatar_mityan.png" alt="участник" class="sidebar__participant-avatar"
+                    <img src="/src/graphics/png/avatar_mityan.jpg" alt="участник" class="sidebar__participant-avatar"
                         data-sound="/src/avatar_mityan.ogg">
                     <p>Митян</p>
                 </li>
                 <li>
-                    <img src="/src/graphics/png/avatar_serega.png" alt="участник" class="sidebar__participant-avatar"
+                    <img src="/src/graphics/png/avatar_serega.jpg" alt="участник" class="sidebar__participant-avatar"
                         data-sound="/src/avatar_serega.ogg">
                     <p>Серега</p>
                 </li>
@@ -70,24 +74,9 @@
             </ul>
         </nav>
 
-        <audio id="hoverSound" src="/src/hover.ogg" preload="auto"></audio>
-        <audio id="hoverSound2" src="/src/hover2.ogg" preload="auto"></audio>
 
-        <!-- <div class="main-title">
-            <h1>МАРАФОН <span class="scary-text">ХОРРОРОВ</span><span class="mega-text">2</span></h1>
-        </div> -->
-
-        <section class="now-we-do">
-            <h1 class="now-we-do__title">В планах угареть по:</h1>
-            <img class="now-we-do__tumbnail" src="/src/graphics/png/ninah-tumbnail.jpg" alt="how-we-do-tumbnail">
-            <!-- <div class="now-we-do__schedule">
-                <h2 class="now-we-do__schedule-title">Мероприятие запланированно на:</h2>
-                <h2 class="now-we-do__schedule-subtitle"><span class="green-text">69</span> Февактабяря</h2>
-                <h2 class="now-we-do__schedule-subtitle"><span class="green-text">99:00</span> По китайскому времени
-                </h2>
-            </div> -->
-        </section>
-
+        <h1 class="info-text">ПОКА РАСПИСАНИЯ НЕТ, РАЗВОРАЧИВАЙТЕСЬ <span class="scary-text">НАЗАД</span></h1>
+    
     </main>
     <script src="/scripts-js-php/script.js"></script>
 </body>

@@ -197,7 +197,7 @@ h1 {
 }
 .sidebar__participant {
   display: flex;
-  max-width: 350px;
+  max-width: 370px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -211,4 +211,18 @@ h1 {
 }
 .sidebar__participant-avatar:hover {
   scale: 1.5;
+}
+
+.moved {
+  translate: 0 0;
+}
+
+.toggled {
+  background-color: #fff;
+  color: #000;
+}
+
+.info-text {
+  text-align: center;
+  font-size: 10rem;
 }/*# sourceMappingURL=styles.css.map */

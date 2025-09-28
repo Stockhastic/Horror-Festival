@@ -31,3 +31,14 @@ document.querySelectorAll('.sidebar__participant-avatar')
             if (soundSrc) playCustomSound(soundSrc);
         });
     });
+
+
+
+const btn = document.getElementById("participants-menu-button");
+const sidebar = document.querySelector(".sidebar--participants");
+
+btn.addEventListener("click", (e) => {
+    e.preventDefault(); // чтобы не переходил по href
+    sidebar.classList.toggle("moved");
+    btn.classList.toggle("toggled")
+});

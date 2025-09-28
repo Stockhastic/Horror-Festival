@@ -129,6 +129,8 @@ h1 {
     }
 }
 
+
+
 .sidebar {
     margin: 3rem 1rem 0 1rem;
     display: flex;
@@ -171,7 +173,7 @@ h1 {
 
     &__participant {
         display: flex;
-        max-width: 350px;
+        max-width: 370px;
         flex-wrap: wrap;
         justify-content: space-around;
 
@@ -189,5 +191,18 @@ h1 {
             }
         }
     }
+}
 
+.moved {
+    translate: 0 0;
+}
+
+.toggled {
+    background-color: #fff;
+    color: #000;
+}
+
+.info-text {
+    text-align: center;
+    font-size: 10rem;
 }
