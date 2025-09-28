@@ -3,7 +3,7 @@
 @import "./components";
 
 * {
-    cursor: url(/src/graphics/png/cursor.png) 4 4, auto;
+    cursor: url(src/graphics/png/cursor.png) 4 4, auto;
 }
 
 body {
@@ -12,12 +12,12 @@ body {
 
 @font-face {
     font-family: "Scary1";
-    src: url(/src/coldnightforalligators.otf);
+    src: url(src/coldnightforalligators.otf);
 }
 
 @font-face {
     font-family: "Scary2";
-    src: url(/src/youmurdererbb.otf);
+    src: url(src/youmurdererbb.otf);
 }
 
 p,
