@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- FAVICON -->
     <!-- Favicon Standart -->
     <link rel="icon" type="image/x-icon" href="src/graphics/favicon.ico">
 
-    <title> МАРФОН ХОРРОРОВ 2   |   Утепленный балкон</title>
+    <title> МАРФОН ХОРРОРОВ 2 | Утепленный балкон</title>
 
 </head>
 
 <body>
     <main>
-        <!-- <div class="main-title">
-            <h1>МАРАФОН  <span class="scary-text">ХОРРОРОВ</span><span class="mega-text">2</span></h1>
-        </div> -->
-
         <nav class="sidebar">
             <a href="/schedule.html" class="sidebar__link">ознакомиться с расписанием</a>
-            <a href="/participants.html" class="sidebar__link">ознакомиться с участниками</a>
+            <button href="/participants.html" class="sidebar__link">ознакомиться с участниками</button>
         </nav>
+
         <nav class="sidebar sidebar--participants">
             <ul class="sidebar__participant">
                 <li>
-                    <img src="#" alt="участник">
+                    <img src="/src/graphics/png/avatar_geva.png" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_geva.ogg">
                     <p>Гева</p>
                 </li>
                 <li>
-                    <img src="#" alt="участник">
+                    <img src="/src/graphics/png/avatar_mityan.jpg" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_mityan.ogg">
                     <p>Митян</p>
                 </li>
                 <li>
-                    <img src="#" alt="участник">
+                    <img src="/src/graphics/png/avatar_serega.jpg" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_serega.ogg">
                     <p>Серега</p>
                 </li>
                 <li>
-                    <img src="#" alt="участник">
-                    <p></p>
+                    <img src="/src/graphics/png/avatar_diana.jpg" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_diana.ogg">
+                    <p>Диана</p>
                 </li>
                 <li>
-                    <img src="#" alt="участник">
-                    <p></p>
+                    <img src="/src/graphics/png/avatar_igor.png" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_igor.ogg">
+                    <p>Игорек</p>
+                </li>
+                <li>
+                    <img src="/src/graphics/png/avatar_pablo.png" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_pasha.ogg">
+                    <p>Паблос</p>
+                </li>
+                <li>
+                    <img src="/src/graphics/png/avatar_andrykha.png" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_andryukha.ogg">
+                    <p>Андрюха</p>
+                </li>
+                <li>
+                    <img src="/src/graphics/png/avatar_kiryukha.jpg" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_kirill.ogg">
+                    <p>Кирюха</p>
+                </li>
+                <li>
+                    <img src="/src/graphics/png/avatar_fedyushin.png" alt="участник" class="sidebar__participant-avatar"
+                        data-sound="/src/avatar_fedushin.ogg">
+                    <p>Федюшин</p>
                 </li>
             </ul>
         </nav>
+        <audio id="hoverSound" src="/src/hover.ogg" preload="auto"></audio>
+        <audio id="hoverSound2" src="/src/hover2.ogg" preload="auto"></audio>
+
+        <div class="main-title">
+            <h1>МАРАФОН <span class="scary-text">ХОРРОРОВ</span><span class="mega-text">2</span></h1>
+        </div>
+
+
 
         <section class="now-we-do">
             <h1 class="now-we-do__title">В планах угареть по:</h1>
@@ -54,11 +85,13 @@
             <div class="now-we-do__schedule">
                 <h2 class="now-we-do__schedule-title">Мероприятие запланированно на:</h2>
                 <h2 class="now-we-do__schedule-subtitle"><span class="green-text">69</span> Февактабяря</h2>
-                <h2 class="now-we-do__schedule-subtitle"><span class="green-text">99:00</span> По китайскому времени</h2>
+                <h2 class="now-we-do__schedule-subtitle"><span class="green-text">99:00</span> По китайскому времени
+                </h2>
             </div>
         </section>
 
     </main>
-    <script src="scripts-js-php/script.js"></script>
+    <script src="/scripts-js-php/script.js"></script>
 </body>
+
 </html>

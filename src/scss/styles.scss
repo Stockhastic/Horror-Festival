@@ -6,7 +6,7 @@
     cursor: url(/src/graphics/png/cursor.png) 4 4, auto;
 }
 
-body{
+body {
     background-color: #000;
 }
 
@@ -14,12 +14,18 @@ body{
     font-family: "Scary1";
     src: url(/src/coldnightforalligators.otf);
 }
+
 @font-face {
     font-family: "Scary2";
     src: url(/src/youmurdererbb.otf);
 }
 
-p, h1, h2, h3, h4, h5 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Scary2";
     color: #fff;
 }
@@ -32,11 +38,12 @@ h1 {
     font-size: 3rem;
 }
 
-.main-title{
+.main-title {
     font-family: "Scary1";
     outline: 1px dashed blue;
     padding: 2rem;
-    & > h1 {
+
+    &>h1 {
         justify-content: center;
         align-items: center;
         display: flex;
@@ -44,67 +51,85 @@ h1 {
     }
 }
 
-.scary-text{
+.scary-text {
     color: #f00;
 }
-.green-text{
+
+.green-text {
     color: #0F0;
 }
 
-.mega-text{
+.mega-text {
     color: #f00;
     font-size: 15rem;
     margin-left: 3rem;
 }
 
 
-.now-we-do{
+.now-we-do {
     margin: 0 auto;
     display: flex;
-    
+
     flex-direction: column;
     align-items: center;
     padding-block: 6rem;
     width: 1300px;
-    outline: 1px solid darksalmon;
+    // outline: 1px solid darksalmon;
 
-    & > h1, &__title{
+    &>h1,
+    &__title {
         font-size: 6rem;
         display: inline-block;
         font-family: "Scary2";
         margin-bottom: 2rem;
     }
 
-    &__tumbnail{
-        animation: sway 10s ease-in-out infinite;
+    &__tumbnail {
+        animation: sway 7s ease-in-out infinite;
         width: 80%;
         border: 1px solid vars.$tumbnailGlowColor;
         box-shadow: 0 0 30px vars.$tumbnailGlowColor;
         border-radius: 2rem;
     }
 
-    &__schedule{
-        
+    &__schedule {
+
         outline: 1px dashed red;
-        &-title{
+
+        &-title {
             font-family: "Scary2";
             font-size: 3rem;
         }
-        &-subtitle{
+
+        &-subtitle {
             font-size: 2.5rem;
         }
     }
 }
 
 @keyframes sway {
-        0%   { transform: translateX(0) rotate(0deg); }
-        25%  { transform: translateX(-4px) rotate(-1.5deg); }
-        50%  { transform: translateX(0) rotate(0deg); }
-        75%  { transform: translateX(4px) rotate(1.5deg); }
-        100% { transform: translateX(0) rotate(0deg); }
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(-4px) rotate(-1.5deg);
+    }
+
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(4px) rotate(1.5deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
 }
 
-.sidebar{
+.sidebar {
     margin: 3rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
@@ -112,24 +137,57 @@ h1 {
     outline: 1px solid #fff;
     padding: 1rem 2rem 1rem 0;
     border-radius: 1rem;
-    &--participants{
+
+    &--participants {
+        translate: -110% 0;
+        transition: 0.13s;
         margin-top: 10rem;
         padding: 2rem;
+        background-color: #000000d0;
+        z-index: 9999999;
+
+        &::after {
+            content: "►";
+        }
     }
-    &__link{
+
+    &__link {
         transition: 0.13s;
         padding: 0.3rem 1rem;
         font-family: 'Courier New', Courier, monospace;
         // text-transform: uppercase;
         font-size: 1rem;
-        &:hover{
+
+        &:hover {
             transform: translateX(10%);
             font-weight: 900;
+            text-shadow: 0 0 15px #fff;
         }
-        &::before{
+
+        &::before {
             content: "► ";
         }
     }
 
+    &__participant {
+        display: flex;
+        max-width: 350px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &>li>p {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        &-avatar {
+            height: 150px;
+            transition: 0.13s;
+
+            &:hover {
+                scale: 1.5;
+            }
+        }
+    }
 
 }
