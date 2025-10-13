@@ -62,11 +62,11 @@ body {
 
 @font-face {
   font-family: "Scary1";
-  src: url(src/coldnightforalligators.otf);
+  src: url(/src/coldnightforalligators.otf);
 }
 @font-face {
   font-family: "Scary2";
-  src: url(src/youmurdererbb.otf);
+  src: url(/src/youmurdererbb.otf);
 }
 p,
 h1,
@@ -83,7 +83,7 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .main-title {
@@ -95,11 +95,15 @@ h1 {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 8rem;
 }
 
 .scary-text {
   color: #f00;
+}
+
+.info-text {
+  text-align: center;
+  font-size: 4rem;
 }
 
 .green-text {
@@ -127,7 +131,6 @@ h1 {
   margin-bottom: 2rem;
 }
 .now-we-do__tumbnail {
-  animation: sway 7s ease-in-out infinite;
   width: 80%;
   border: 1px solid rgb(49, 202, 202);
   box-shadow: 0 0 30px rgb(49, 202, 202);
@@ -149,16 +152,33 @@ h1 {
     transform: translateX(0) rotate(0deg);
   }
   25% {
-    transform: translateX(-4px) rotate(-1.5deg);
+    transform: translateX(0) rotate(-3deg);
   }
   50% {
-    transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(3deg);
   }
   75% {
-    transform: translateX(4px) rotate(1.5deg);
+    transform: translateX(0) rotate(-3deg);
   }
   100% {
     transform: translateX(0) rotate(0deg);
+  }
+}
+.main-title .wave-letter {
+  display: inline-block;
+  animation: wave 1.6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .sidebar {
@@ -210,19 +230,41 @@ h1 {
   transition: 0.13s;
 }
 .sidebar__participant-avatar:hover {
-  scale: 1.5;
+  animation: sway 3s infinite ease-in-out;
+  scale: 1.8;
+  cursor: pointer;
+}
+.sidebar__participant-avatar.is-playing {
+  animation: playing-glow 1s ease-in-out infinite;
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  will-change: filter;
+}
+.sidebar__participant-avatar.is-playing:hover {
+  animation: sway 3s infinite ease-in-out, playing-glow 1s ease-in-out infinite;
 }
 
 .moved {
   translate: 0 0;
 }
 
-.toggled {
-  background-color: #fff;
-  color: #000;
+@keyframes playing-glow {
+  0% {
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(139, 238, 221, 0.8)) drop-shadow(0 0 18px rgba(109, 255, 223, 0.664));
+  }
+  100% {
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+}
+#participants-menu-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
 }
 
-.info-text {
-  text-align: center;
-  font-size: 10rem;
+.toggled {
+  background-color: #fff !important;
+  color: #000 !important;
 }/*# sourceMappingURL=styles.css.map */
